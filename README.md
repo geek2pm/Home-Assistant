@@ -1,18 +1,38 @@
 # Home-Assistant
 
+
+/etc/apt/sources.list
 ```
-sudo apt-get install python3
-sudo apt-get install python3-dev
-sudo apt-get install python3-setuptools
+deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib
+deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib
+```
+
+```
+sudo apt update
+sudo apt install python3
+sudo apt install python3-dev
+sudo apt install python3-setuptools
 sudo apt install python3-pip
+sudo apt install libffi-dev
 pip3 install PyQRCode
 pip3 install homeassistant
 hass --open-ui
 ```
 
+/etc/rc.local
+```
+su pi -c "exec /home/pi/hass.sh"
+```
+
+hass.sh
+```
+hass
+```
+
 然后打开浏览器，浏览：http://localhost:8123
 
 android手机可以使用：https://github.com/tuanha2000vn/hasskit/releases/download/4.3/app-release.apk
+
 ios的在appstore里搜索hasskit即可。
 
 
