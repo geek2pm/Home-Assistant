@@ -15,6 +15,9 @@ sudo apt install python3-setuptools
 sudo apt install python3-pip
 sudo apt install libffi-dev
 pip3 install PyQRCode
+pip3 install defusedxml
+pip3 install distro
+pip3 install aiohttp_cors
 pip3 install homeassistant
 hass --open-ui
 ```
