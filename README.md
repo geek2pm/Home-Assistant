@@ -29,6 +29,17 @@ sudo apt install python3-dev
 sudo apt install python3-setuptools
 sudo apt install python3-pip
 sudo apt install libffi-dev
+```
+
+~/.pip/pip.conf
+```
+[global] 
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+[install]
+trusted-host = https://pypi.tuna.tsinghua.edu.cn
+```
+
+```
 pip3 install PyQRCode
 pip3 install defusedxml
 pip3 install distro
