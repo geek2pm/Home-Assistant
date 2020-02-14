@@ -1,6 +1,21 @@
 # Home-Assistant
 
 
+open SD
+
+/etc/wpa_supplicant/wpa_supplicant.conf 
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=CN
+network={
+	ssid=""
+	scan_ssid=1
+	psk=""
+}
+```
+
 /etc/apt/sources.list
 ```
 deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib
